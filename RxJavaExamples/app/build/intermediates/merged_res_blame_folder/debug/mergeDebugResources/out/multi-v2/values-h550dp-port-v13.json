@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-36:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ekaterina\\.gradle\\caches\\transforms-4\\d150a6b00fcf3898601eb5cf8cbb284d\\transformed\\material-1.12.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "64",
+                        "endOffsets": "115"
+                    }
+                }
+            ]
+        }
+    ]
+}

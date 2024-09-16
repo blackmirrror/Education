@@ -1,0 +1,3 @@
+ru.blackmirrror.rxjavaexamples.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

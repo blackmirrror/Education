@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RxJavaExamples</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_title">Матрица</string>
+    <string name="item_genre_year">Фантастика (2003)</string>
+    <string name="hint_search">Поиск</string>
+    <string name="hide">Не показывать ничего при ошибке</string>
+    <string name="show">Показать хотя бы что-то при ошибке</string>
+</resources>

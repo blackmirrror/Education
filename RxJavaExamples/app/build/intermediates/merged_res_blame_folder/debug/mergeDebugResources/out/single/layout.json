@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-37:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-main-40:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-37:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-37:\\layout\\item_movie.xml",
+        "source": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-main-40:\\layout\\item_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-37:\\layout\\fragment_requests.xml",
+        "source": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-main-40:\\layout\\fragment_requests.xml"
+    },
+    {
+        "merged": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-37:\\layout\\item_discount_card.xml",
+        "source": "C:\\Users\\ekaterina\\.gradle\\daemon\\8.6\\ru.blackmirrror.rxjavaexamples.app-main-40:\\layout\\item_discount_card.xml"
+    },
+    {
+        "merged": "ru.blackmirrror.rxjavaexamples.app-mergeDebugResources-37:/layout/fragment_search.xml",
+        "source": "ru.blackmirrror.rxjavaexamples.app-main-40:/layout/fragment_search.xml"
+    }
+]

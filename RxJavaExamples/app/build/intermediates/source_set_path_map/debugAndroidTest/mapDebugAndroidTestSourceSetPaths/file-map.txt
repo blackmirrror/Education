@@ -1,0 +1,5 @@
+ru.blackmirrror.rxjavaexamples.test.app-core-1.6.1-0 C:\Users\ekaterina\.gradle\caches\transforms-4\3f1d6d90334b762975f1a42f7612a9d5\transformed\core-1.6.1\res
+ru.blackmirrror.rxjavaexamples.test.app-androidTest-1 C:\Users\ekaterina\AndroidStudioProjects\RxJavaExamples\app\build\generated\res\resValues\androidTest\debug
+ru.blackmirrror.rxjavaexamples.test.app-mergeDebugAndroidTestResources-2 C:\Users\ekaterina\AndroidStudioProjects\RxJavaExamples\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+ru.blackmirrror.rxjavaexamples.test.app-mergeDebugAndroidTestResources-3 C:\Users\ekaterina\AndroidStudioProjects\RxJavaExamples\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+ru.blackmirrror.rxjavaexamples.test.app-debugAndroidTest-4 C:\Users\ekaterina\AndroidStudioProjects\RxJavaExamples\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

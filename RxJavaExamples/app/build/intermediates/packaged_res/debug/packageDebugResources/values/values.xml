@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#C1C1C1</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">RxJavaExamples</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hide">Не показывать ничего при ошибке</string>
+    <string name="hint_search">Поиск</string>
+    <string name="item_genre_year">Фантастика (2003)</string>
+    <string name="item_title">Матрица</string>
+    <string name="show">Показать хотя бы что-то при ошибке</string>
+    <style name="Base.Theme.RxJavaExamples" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.RxJavaExamples" parent="Base.Theme.RxJavaExamples"/>
+</resources>
