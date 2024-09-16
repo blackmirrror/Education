@@ -1,12 +1,11 @@
-package ru.blackmirrror.androidsdk.fragments
+package ru.blackmirrror.first
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ru.blackmirrror.androidsdk.R
-import ru.blackmirrror.androidsdk.databinding.FragmentFirstBinding
+import ru.blackmirrror.first.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
 

@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidSdk"
 include(":app")
- 
+include(":first")
+include(":core")
+include(":second")
+include(":third")

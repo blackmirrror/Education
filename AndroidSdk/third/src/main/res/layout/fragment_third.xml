@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".fragments.ThirdFragment">
+    tools:context="ru.blackmirrror.third.ThirdFragment">
 
     <TextView
         android:layout_width="match_parent"
