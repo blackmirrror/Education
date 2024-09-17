@@ -50,6 +50,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.koin.android)
+    implementation(libs.androidx.work.runtime.ktx)
 
     implementation(project(":core"))
     implementation(project(":first"))
