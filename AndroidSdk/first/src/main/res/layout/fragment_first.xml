@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="ru.blackmirrror.first.FirstFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/first"/>
+
+    <ru.blackmirrror.first.CustomView
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="32dp"
+        android:layout_height="32dp"
+        android:background="#CCCCCC"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/next"/>
+
+</LinearLayout>
