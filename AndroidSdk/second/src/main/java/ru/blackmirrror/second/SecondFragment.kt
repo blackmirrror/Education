@@ -13,14 +13,16 @@ import ru.blackmirrror.second.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment() {
 
-    private lateinit var binding: FragmentSecondBinding
+    private var _binding: FragmentSecondBinding? = null
+    private val binding get() = _binding!!
+
     private val appRouter: Router by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentSecondBinding.inflate(inflater, container, false)
 
         setButtons()
 
@@ -34,5 +36,10 @@ class SecondFragment : Fragment() {
         binding.btnBack.setOnClickListener {
             appRouter.goBack()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

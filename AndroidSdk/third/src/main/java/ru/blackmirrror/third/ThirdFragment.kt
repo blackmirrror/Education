@@ -12,14 +12,16 @@ import ru.blackmirrror.third.databinding.FragmentThirdBinding
 
 class ThirdFragment : Fragment() {
 
-    private lateinit var binding: FragmentThirdBinding
+    private var _binding: FragmentThirdBinding? = null
+    private val binding get() = _binding!!
+
     private val appRouter: Router by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentThirdBinding.inflate(inflater, container, false)
+        _binding = FragmentThirdBinding.inflate(inflater, container, false)
 
         setButtons()
 
@@ -30,5 +32,10 @@ class ThirdFragment : Fragment() {
         binding.btnBack.setOnClickListener {
             appRouter.goBack()
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
