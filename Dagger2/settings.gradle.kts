@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Dagger2"
 include(":app")
- 
+include(":core")
+include(":feature:home")
