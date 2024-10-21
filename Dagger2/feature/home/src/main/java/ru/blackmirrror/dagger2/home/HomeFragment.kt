@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        HomeComponent.init(requireContext())
+        HomeComponent.init(requireContext().applicationContext)
             .inject(this)
     }
 

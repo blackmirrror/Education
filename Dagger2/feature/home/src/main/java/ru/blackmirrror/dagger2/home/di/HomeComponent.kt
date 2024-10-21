@@ -6,8 +6,10 @@ import dagger.Component
 import ru.blackmirrror.dagger2.home.HomeFragment
 import javax.inject.Qualifier
 import javax.inject.Scope
+import javax.inject.Singleton
 
 @Home
+@Singleton
 @Component(
     modules = [HomeDataModule::class, HomeDomainModule::class, HomePresentationModule::class],
     dependencies = [HomeDependenciesProvider::class]
@@ -16,14 +18,12 @@ interface HomeComponent {
 
     val deps: HomeDependenciesProvider
 
-    @Component.Builder
-    interface Builder {
+    @Component.Factory
+    interface Factory {
 
-        fun homeDependenciesProvider(
+        fun create(
             homeDependenciesProvider: HomeDependenciesProvider
-        ): Builder
-
-        fun build(): HomeComponent
+        ): HomeComponent
     }
 
     companion object {
@@ -33,10 +33,9 @@ interface HomeComponent {
         @Synchronized
         fun init(context: Context): HomeComponent {
             if (homeComponent == null) {
-                val deps = context.applicationContext as HomeDependenciesProvider
-                homeComponent = DaggerHomeComponent.builder()
-                    .homeDependenciesProvider(deps)
-                    .build()
+                val deps = context as HomeDependenciesProvider
+                homeComponent = DaggerHomeComponent.factory()
+                    .create(deps)
             }
             return homeComponent!!
         }

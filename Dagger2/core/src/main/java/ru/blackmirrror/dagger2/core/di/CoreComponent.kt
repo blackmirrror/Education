@@ -17,11 +17,11 @@ interface CoreComponent {
     @Second
     fun getSecondRetrofit(): Retrofit
 
-    @Component.Builder
-    interface Builder {
-        @BindsInstance
-        fun context(context: Context): Builder
-        fun build(): CoreComponent
+    @Component.Factory
+    interface Factory {
+        fun create(
+            @BindsInstance context: Context
+        ): CoreComponent
     }
 
     companion object {
@@ -31,10 +31,8 @@ interface CoreComponent {
         @Synchronized
         fun init(context: Context): CoreComponent {
             if (coreComponent == null) {
-                coreComponent = DaggerCoreComponent
-                    .builder()
-                    .context(context.applicationContext)
-                    .build()
+                coreComponent = DaggerCoreComponent.factory()
+                    .create(context)
             }
             return coreComponent!!
         }

@@ -11,9 +11,7 @@ class App: Application(),
 {
 
     private val appComponent by lazy {
-        DaggerAppComponent.builder()
-            .context(this)
-            .build()
+        DaggerAppComponent.factory().create(applicationContext)
     }
 
     override fun getRetrofitFirst(): Retrofit {

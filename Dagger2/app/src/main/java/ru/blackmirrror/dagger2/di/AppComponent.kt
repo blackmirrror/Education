@@ -19,13 +19,12 @@ interface AppComponent {
     @Second
     fun getRetrofitSecond(): Retrofit
 
-    @Component.Builder
-    interface Builder {
+    @Component.Factory
+    interface Factory {
 
-        @BindsInstance
-        fun context(context: Context): Builder
-
-        fun build(): AppComponent
+        fun create(
+            @BindsInstance context: Context
+        ): AppComponent
     }
 }
 
