@@ -8,42 +8,14 @@ import javax.inject.Qualifier
 import javax.inject.Scope
 import javax.inject.Singleton
 
-@Home
-@Singleton
+@HomeScope
 @Component(
-    modules = [HomeDataModule::class, HomeDomainModule::class, HomePresentationModule::class],
-    dependencies = [HomeDependenciesProvider::class]
+    modules = [HomeModule::class, RepoModule::class, ViewModelModule::class],
 )
-interface HomeComponent {
-
-    val deps: HomeDependenciesProvider
-
-    @Component.Factory
-    interface Factory {
-
-        fun create(
-            homeDependenciesProvider: HomeDependenciesProvider
-        ): HomeComponent
-    }
-
-    companion object {
-        @Volatile
-        private var homeComponent: HomeComponent? = null
-
-        @Synchronized
-        fun init(context: Context): HomeComponent {
-            if (homeComponent == null) {
-                val deps = context as HomeDependenciesProvider
-                homeComponent = DaggerHomeComponent.factory()
-                    .create(deps)
-            }
-            return homeComponent!!
-        }
-    }
-
-    fun inject(fragment: HomeFragment)
+internal interface HomeComponent {
+    fun injectHomeFragment(homeFragment: HomeFragment)
 }
 
 @Scope
 @Retention(AnnotationRetention.RUNTIME)
-internal annotation class Home
+annotation class HomeScope()

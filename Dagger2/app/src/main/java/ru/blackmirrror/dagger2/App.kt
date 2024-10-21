@@ -1,24 +1,14 @@
 package ru.blackmirrror.dagger2
 
 import android.app.Application
-import retrofit2.Retrofit
-import ru.blackmirrror.dagger2.core.di.DaggerCoreComponent
+import ru.blackmirrror.dagger2.di.AppComponent
 import ru.blackmirrror.dagger2.di.DaggerAppComponent
-import ru.blackmirrror.dagger2.home.di.HomeDependenciesProvider
 
-class App: Application(),
-    HomeDependenciesProvider
-{
+class App : Application() {
+    private lateinit var appComponent: AppComponent
 
-    private val appComponent by lazy {
-        DaggerAppComponent.factory().create(applicationContext)
-    }
-
-    override fun getRetrofitFirst(): Retrofit {
-        return appComponent.getRetrofitFirst()
-    }
-
-    override fun getRetrofitSecond(): Retrofit {
-        return appComponent.getRetrofitSecond()
+    override fun onCreate() {
+        super.onCreate()
+        appComponent = DaggerAppComponent.builder().build()
     }
 }

@@ -16,6 +16,7 @@ retrofit = "2.11.0"
 retrofit-converter = "2.9.0"
 
 lifecycle-runtime-ktx = "2.8.1"
+navigation-fragment-ktx = "2.7.7"
 
 kotlinx-coroutines = "1.8.1"
 
@@ -38,6 +39,7 @@ retrofit-converter-json = { module = "com.squareup.retrofit2:converter-gson", ve
 
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment-ktx" }
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }

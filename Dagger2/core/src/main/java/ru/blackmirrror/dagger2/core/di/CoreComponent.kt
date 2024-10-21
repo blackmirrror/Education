@@ -4,49 +4,19 @@ import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
 import retrofit2.Retrofit
+import ru.blackmirrror.dagger2.core.network.FirstApi
+import ru.blackmirrror.dagger2.core.network.FirstNetworkModule
+import ru.blackmirrror.dagger2.core.network.SecondApi
+import ru.blackmirrror.dagger2.core.network.SecondNetworkModule
 import javax.inject.Qualifier
 import javax.inject.Scope
+import javax.inject.Singleton
 
-@Core
-@Component(modules = [CoreModule::class])
-interface CoreComponent {
+@Singleton
+@Component(modules = [FirstNetworkModule::class, SecondNetworkModule::class])
+internal interface CoreComponent {
 
-    @First
-    fun getFirstRetrofit(): Retrofit
+    val firstApi: FirstApi
 
-    @Second
-    fun getSecondRetrofit(): Retrofit
-
-    @Component.Factory
-    interface Factory {
-        fun create(
-            @BindsInstance context: Context
-        ): CoreComponent
-    }
-
-    companion object {
-        @Volatile
-        private var coreComponent: CoreComponent? = null
-
-        @Synchronized
-        fun init(context: Context): CoreComponent {
-            if (coreComponent == null) {
-                coreComponent = DaggerCoreComponent.factory()
-                    .create(context)
-            }
-            return coreComponent!!
-        }
-    }
+    val secondApi: SecondApi
 }
-
-@Qualifier
-@Retention(AnnotationRetention.BINARY)
-annotation class First
-
-@Qualifier
-@Retention(AnnotationRetention.BINARY)
-annotation class Second
-
-@Scope
-@Retention(AnnotationRetention.RUNTIME)
-annotation class Core
