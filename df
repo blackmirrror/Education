@@ -1,0 +1,95 @@
+[33mcommit c30ce24ed5bc7bc2c86060f3105bf04f0f889e4c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 2ec35fc 820a713
+Author: blackmirrror <87281139+blackmirrror@users.noreply.github.com>
+Date:   Wed Oct 30 22:01:26 2024 +0300
+
+    Merge pull request #3 from blackmirrror/db_network_patterns
+    
+    Db network patterns
+
+[33mcommit 820a7137273397ef8776f9b92cc852d2d31cf74e[m[33m ([m[1;31morigin/db_network_patterns[m[33m, [m[1;32mdb_network_patterns[m[33m)[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Sat Oct 26 12:19:21 2024 +0300
+
+    Done
+
+[33mcommit 0815c27334bfb3fbd951b6bf26353430680f9e34[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Fri Oct 25 11:56:26 2024 +0300
+
+    init DbNetworkPatterns
+
+[33mcommit 2ec35fcd8420b1e91923932e730301501cdaa9b6[m
+Merge: 241b534 a872867
+Author: blackmirrror <87281139+blackmirrror@users.noreply.github.com>
+Date:   Sun Sep 22 10:26:38 2024 +0300
+
+    Merge pull request #1 from blackmirrror/android_sdk
+    
+    Android sdk
+
+[33mcommit a872867f0106e23bd57868552b387a0d8120d85f[m[33m ([m[1;31morigin/android_sdk[m[33m, [m[1;32mandroid_sdk[m[33m)[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Sun Sep 22 10:23:54 2024 +0300
+
+    Nullable binding
+
+[33mcommit a5168aa814bef3614b718e995c31e5a06dfaf74c[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Tue Sep 17 15:05:38 2024 +0300
+
+    CustomView
+
+[33mcommit be7d0171308b4a6a8ae2777eb3c3d87688959a37[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Tue Sep 17 14:48:30 2024 +0300
+
+    Fix
+
+[33mcommit 19943762a8c6ccb302bae9122ca97f287daba713[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Tue Sep 17 14:47:55 2024 +0300
+
+    One time WorkManager about charging
+
+[33mcommit 92095f83448c27c1ad7ae2960fb4c3b497611084[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Mon Sep 16 23:19:10 2024 +0300
+
+    Router
+
+[33mcommit b67804a33a0e57da288edfa3b839ec82470fb155[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Mon Sep 16 22:20:32 2024 +0300
+
+    Fix
+
+[33mcommit 2df39c12982a8305df6a198467e8ff41987f7912[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Mon Sep 16 22:19:10 2024 +0300
+
+    Modules added
+
+[33mcommit 11724a8b7a8d736d82862c770becd944b10c0b49[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Mon Sep 16 21:52:35 2024 +0300
+
+    Init project
+
+[33mcommit 241b5341a56e25007355ae9a386c4774eedc1dbe[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Mon Sep 16 12:57:33 2024 +0300
+
+    3. RxJava
+
+[33mcommit 61bdae15c3162c76016231bf13887dd275ca370f[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Wed Aug 7 17:31:14 2024 +0300
+
+    2. Coroutines
+
+[33mcommit 77b0a2ee8ee8a54097aa7d8df75069198e03786f[m
+Author: Ekaterina Petrova <ekaterinapetrova985@gmail.com>
+Date:   Wed Aug 7 16:25:06 2024 +0300
+
+    1. Kotlin
