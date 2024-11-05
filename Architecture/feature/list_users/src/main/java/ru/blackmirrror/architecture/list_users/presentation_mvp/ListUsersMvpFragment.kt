@@ -25,6 +25,8 @@ class ListUsersMvpFragment : Fragment(), ListUsersContract.View {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        presenter.getUsers()
+
         binging?.refreshMvp?.setOnClickListener {
             presenter.getUsers()
         }
